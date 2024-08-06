@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>MovieSpot</title>
+    <link rel="stylesheet" href="movie.css">
+    <script src="movie.js" defer></script>
+</head>
+<body>
+    <nav>
+        <img class = "logo" src="assets/movielogo.avif" alt="">
+        <h1 class="nav__title">The MovieSpot</h1>
+        <ul class ="nav-links-list">
+            <li class="nav__link">
+                <a href="index.html" 
+                class="nav__link--anchor
+                link__hover-effect">
+                Home</a>
+            </li>
+            <li class="nav__link">
+                <a href="" 
+                class="nav__link--anchor
+                link__hover-effect">
+                Sign Up</a>
+            </li>
+            <li class="nav__link">
+                <a href="" 
+                class="nav__link--anchor
+                nav__btn">
+                Log In</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="movie-section">
+            <div class="container">
+                <div class="row">
+                    <form action="" class="search">
+                        <div class="input__wrapper">
+                        <input type="text" class="search__input" placeholder="Search Movies by Title">
+                        <button class="search__btn" click="submit">Search</button>
+                       </div>
+                      </form>
+                      <div class="filter--wrapper">
+                      <select id="filter" onchange ="filterMovies(event)">
+                        <option value="Recent">Recent</option>
+                        <option value="Oldest">Oldest</option>
+                      </select>
+                      </div>
+                <div class="movies__list">
+                    <div class="movie__card--disappear">
+                        <div class="movie__img--wrapper">
+                            <img class="movie__img" src="">
+                        </div>
+                        <div class="movie__info">
+                            <div class="movie__title">
+                                Avengers: Infinity War
+                            </div>
+                            <div class="movie-year">
+                                2018
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2024, All Rights Reserved</p>
+    </footer>
+</body>
+</html>
